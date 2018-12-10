@@ -53,7 +53,15 @@
             <div class="col-lg-8 mx-auto">
                 <h1 style="font-family: 'Alegreya Sans SC', sans-serif;">vote now!</h1>
                 <p>여행지 투표를 위해서&nbsp;</p>
-                <button href="/polls/{{ question.id }}/"  class="btn btn-primary btn-lg btn-default" type="button" style="font-family: 'Alegreya Sans SC', sans-serif;">visit vote page</button></div>
+                {% if latest_question_list %}
+                    <ul>
+                    {% for question in latest_question_list %}
+                        <li><button href="/polls/{{ question.id }}/"  class="btn btn-primary btn-lg btn-default" type="button" style="font-family: 'Alegreya Sans SC', sans-serif;">visit vote page</button></div></li>
+                    {% endfor %}
+                    </ul>
+              {% else %}
+                    <p>No polls are available.</p>
+              {% endif %}    
         </div>
     </section>
     <section id="contact" class="content-section text-center">
