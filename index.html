@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Network Assignment </title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav" style="font-size: 10px;height: 91px;width: 1880px;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#" style="font-size: 18px;font-family: 'Alegreya Sans SC', sans-serif;height: 43px;width: 181px;margin: -352px;">COMPUTER-NETWORK CLASS</a><button class="navbar-toggler navbar-toggler-right" data-toggle="collapse"
+                data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#about" style="font-size: 12px;font-family: 'Alegreya Sans SC', sans-serif;">About</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#download" style="font-size: 12px;font-family: 'Alegreya Sans SC', sans-serif;">download</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation" style="height: 32px;"><a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 12px;font-family: 'Alegreya Sans SC', sans-serif;padding: 8px;margin: 0px;height: 55px;">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/paul-gaudriault-372147-unsplash.jpg');">
+        <div class="intro-body" style="height: 543px;width: 1158px;">
+            <div class="container">
+                <div class="row" style="height: 537px;width: 1156px;">
+                    <div class="col-lg-8 mx-auto" style="width: 739px;height: 400px;margin: 25px;">
+                        <h1 class="brand-heading" style="font-size: 86px;font-family: 'Alegreya Sans SC', sans-serif;height: 110px;width: 743px;">travel concept</h1>
+                        <p class="intro-text" style="height: 104px;padding: -15px;margin: 72px;width: 627px;font-family: 'Alegreya Sans SC', sans-serif;">Where do you want to go?<br>Just vote place where you want to go -<br><br></p><a class="btn btn-link btn-circle" role="button" href="#about" style="height: 58px;width: 59px;padding: 6px;"><i class="fa fa-angle-double-down animated"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="font-size: 35px;">About PAGE</h2>
+                    <p style="font-size: 16px;">이 페이지는 컴퓨터 네트워크의 과제로서 만들어진, <a href="https://ko.dict.naver.com/#/entry/koko/86b20b438ad14354908a19f5aee52927">여행</a><a href="www.naver.com"> </a>컨셉투표 페이지 입니다. <br>본인이 원하는 여행지에 투표한 후 어떤 곳이 가장 높은 표를 받았는지 <br>또 어떤곳이 낮은지투표 결과를 확인 할 수 있습니다.
+                        <br><br>평소 어떤곳으로 여행을 가고 싶으셨나요?<br>바쁘게 보낸 일상을 뒤로하고 한번쯤은 자신을위한 여행을 떠나는 것은 어떨까요?<br>바쁜 삶이지만, 당신의 삶에 잠시나마 숨돌리며 쉬어갈 수 있는 공간이 되었으면 좋겠습니다.</p>
+                    <p style="color: rgb(37,156,207);font-size: 17px;">부경대학교 2018-2학기 네트워크 TERM 과제<br>이선경 &nbsp;/ &nbsp;이윤승 &nbsp;/ &nbsp;김선균</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="download-section content-section text-center" style="background-image:url('assets/img/paul-gaudriault-372147-unsplash.jpg');">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1 style="font-family: 'Alegreya Sans SC', sans-serif;">vote now!</h1>
+                <p>여행지 투표를 위해서&nbsp;</p>
+                <button href="/polls/{{ question.id }}/"  class="btn btn-primary btn-lg btn-default" type="button" style="font-family: 'Alegreya Sans SC', sans-serif;">visit vote page</button></div>
+        </div>
+    </section>
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p>서비스 및 페이지와 관련하여 문의하고싶으신 내용이 있으시면 <br>이곳으로 문의해주시면 감사하겠습니다.</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google fa-fw"></i><span class="network-name">&nbsp; gmail</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-instagram fa-fw"></i><span class="network-name">instagram</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=+&amp;q=Paris%2C+France&amp;zoom=15"></iframe></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;Brand 2018</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+</body>
+
+</html>
